@@ -26,7 +26,7 @@
 
     <section class="sidebar">
         <a href='../getopts/index.html'><img src='http://www.rust-lang.org/logos/rust-logo-128x128-blk-v2.png' alt='' width='100'></a>
-        <p class='location'><a href='index.html'>getopts</a></p><div class='block struct'><h2>Structs</h2><a class='struct ' href='struct.Matches.html' title='The result of checking command line arguments. Contains a vector of matches and a vector of free strings.'>Matches</a><a class='struct current' href='struct.Options.html' title='A description of the options that a program can handle'>Options</a></div><div class='block enum'><h2>Enums</h2><a class='enum ' href='enum.Fail.html' title='The type returned when the command line does not conform to the expected format. Use the `Show` implementation to output detailed information.'>Fail</a><a class='enum ' href='enum.FailType.html' title='The type of failure that occurred.'>FailType</a><a class='enum ' href='enum.HasArg.html' title='Describes whether an option has an argument.'>HasArg</a><a class='enum ' href='enum.Occur.html' title='Describes how often an option may occur.'>Occur</a><a class='enum ' href='enum.ParsingStyle.html' title='What parsing style to use when parsing arguments'>ParsingStyle</a></div>
+        <p class='location'><a href='index.html'>getopts</a></p><div class='block struct'><h2>Structs</h2><a class='struct ' href='struct.Matches.html' title='The result of checking command line arguments. Contains a vector of matches and a vector of free strings.'>Matches</a><a class='struct current' href='struct.Options.html' title='A description of the options that a program can handle'>Options</a></div><div class='block enum'><h2>Enums</h2><a class='enum ' href='enum.Fail.html' title='The type returned when the command line does not conform to the expected format. Use the `Debug` implementation to output detailed information.'>Fail</a><a class='enum ' href='enum.FailType.html' title='The type of failure that occurred.'>FailType</a><a class='enum ' href='enum.HasArg.html' title='Describes whether an option has an argument.'>HasArg</a><a class='enum ' href='enum.Occur.html' title='Describes how often an option may occur.'>Occur</a><a class='enum ' href='enum.ParsingStyle.html' title='What parsing style to use when parsing arguments'>ParsingStyle</a></div>
     </section>
 
     <nav class="sub">
@@ -44,7 +44,7 @@
 <h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>getopts</a>::<wbr><a class='struct' href=''>Options</a><wbr></span><span class='out-of-band'><span id='render-detail'>
             <a id="collapse-all" href="#">[-]
             </a>&nbsp;<a id="expand-all" href="#">[+]</a>
-        </span><a id='src-15' href='../src/getopts/lib.rs.html#102-105'>[src]</a></span></h1>
+        </span><a id='src-15' href='../src/getopts/lib.rs.html#103-106'>[src]</a></span></h1>
 <pre class='rust struct'>pub struct Options {
     // some fields omitted
 }</pre><div class='docblock'><p>A description of the options that a program can handle</p>
@@ -120,7 +120,7 @@ e.g. <code>&quot;FILE&quot;</code> for a <code>-o FILE</code> option</li>
 
 <h1 id="panics" class='section-header'><a
                            href="#panics">Panics</a></h1>
-<p>Returns <code>Err(Fail)</code> on failure: use the <code>Show</code> implementation of <code>Fail</code> to display
+<p>Returns <code>Err(Fail)</code> on failure: use the <code>Debug</code> implementation of <code>Fail</code> to display
 information about it.</p>
 </div><h4 id='method.short_usage' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.short_usage' class='fnname'>short_usage</a>(&amp;self, program_name: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a></code></h4>
 <div class='docblock'><p>Derive a short one-line usage summary from a set of long options.</p>
